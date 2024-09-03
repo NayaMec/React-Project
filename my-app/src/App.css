@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;500;600;700&family=Questrial&display=swap');
+
+:root {
+    --lightblue: hsl(197, 100%, 55%);
+    --Pale-blue: hsl(25, 100%, 94%);
+    --Very-dark-blue: hsl(220, 13%, 13%);
+    --Dark-grayish-blue: hsl(219, 9%, 45%);
+    --Grayish-blue: hsl(220, 14%, 75%);
+    --Light-grayish: hsl(0, 0%, 70%);
+    --Light-grayish-blue: hsl(223, 64%, 98%);
+    --White: hsl(0, 0%, 100%);
+    --Black: hsla(0, 0%, 0%, 0.75);
+}
+
+.text-primary{
+    color: var(--lightblue)
+}
+
+.text-secondary{
+    color: var(--Pale-blue)
+}
+
+
+
+.text-darkGrey{
+    color: var(--Dark-grayish-blue);
+}
+  
+.text-LigthGrey{
+    color: var(--Light-grayish);
+}
+
+.text-grey{
+    color: var(--Grayish-blue);
+}
+
+.text-darkBlue{
+    color: var(--Very-dark-blue);
+}
+
+.bg-primary{
+    background-color: var(--lightblue)
+}
+
+.bg-secondary{
+    background-color: var(--Pale-blue)
+}
+
+.bg-greyish{
+    background-color: var(--Light-grayish-blue);
+}
+
+body{
+    font-family: 'Kumbh Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+p{
+    font-size: 16px;
+}
+
+#thumbnail{
+    display: flex;
+    flex-direction: row;
+    gap: 3.5%;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+#thumbnail > li {
+    width: 12%;
+}
+
+#navBar {
+    background-color: transparent;
+    padding: 15px 0px 30px 50px;
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid var(--Light-grayish);
+    top: 0;
+    position: fixed;
+    width:90%;
+
+}
+
+#navWrap{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
